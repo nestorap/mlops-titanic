@@ -1,0 +1,15 @@
+artifact_uri: file:///home/nalaminos/Proyectos/mlops-titanic/notebooks/mlruns/184926977558481349/b0ab4ffc29b24a65bc963dacb5c0ad05/artifacts
+end_time: 1678809157713
+entry_point_name: ''
+experiment_id: '184926977558481349'
+lifecycle_stage: active
+run_id: b0ab4ffc29b24a65bc963dacb5c0ad05
+run_name: Random Forest Classifier
+run_uuid: b0ab4ffc29b24a65bc963dacb5c0ad05
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1678809157692
+status: 3
+tags: []
+user_id: nalaminos

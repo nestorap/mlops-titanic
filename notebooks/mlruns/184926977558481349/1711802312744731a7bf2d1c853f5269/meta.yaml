@@ -1,0 +1,15 @@
+artifact_uri: file:///home/nalaminos/Proyectos/mlops-titanic/notebooks/mlruns/184926977558481349/1711802312744731a7bf2d1c853f5269/artifacts
+end_time: 1678809158705
+entry_point_name: ''
+experiment_id: '184926977558481349'
+lifecycle_stage: active
+run_id: 1711802312744731a7bf2d1c853f5269
+run_name: Quadratic Discriminant Analysis
+run_uuid: 1711802312744731a7bf2d1c853f5269
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1678809158686
+status: 3
+tags: []
+user_id: nalaminos

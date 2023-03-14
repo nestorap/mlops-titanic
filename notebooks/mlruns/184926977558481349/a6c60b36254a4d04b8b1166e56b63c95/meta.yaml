@@ -1,0 +1,15 @@
+artifact_uri: file:///home/nalaminos/Proyectos/mlops-titanic/notebooks/mlruns/184926977558481349/a6c60b36254a4d04b8b1166e56b63c95/artifacts
+end_time: 1678809157580
+entry_point_name: ''
+experiment_id: '184926977558481349'
+lifecycle_stage: active
+run_id: a6c60b36254a4d04b8b1166e56b63c95
+run_name: Ridge Classifier
+run_uuid: a6c60b36254a4d04b8b1166e56b63c95
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1678809157562
+status: 3
+tags: []
+user_id: nalaminos

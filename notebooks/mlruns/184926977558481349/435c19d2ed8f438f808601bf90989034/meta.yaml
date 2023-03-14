@@ -1,0 +1,15 @@
+artifact_uri: file:///home/nalaminos/Proyectos/mlops-titanic/notebooks/mlruns/184926977558481349/435c19d2ed8f438f808601bf90989034/artifacts
+end_time: 1678809158430
+entry_point_name: ''
+experiment_id: '184926977558481349'
+lifecycle_stage: active
+run_id: 435c19d2ed8f438f808601bf90989034
+run_name: Light Gradient Boosting Machine
+run_uuid: 435c19d2ed8f438f808601bf90989034
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1678809158407
+status: 3
+tags: []
+user_id: nalaminos

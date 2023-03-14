@@ -1,0 +1,15 @@
+artifact_uri: file:///home/nalaminos/Proyectos/mlops-titanic/notebooks/mlruns/184926977558481349/458b50daf2b7470c907c58dab8628893/artifacts
+end_time: 1678810551535
+entry_point_name: ''
+experiment_id: '184926977558481349'
+lifecycle_stage: active
+run_id: 458b50daf2b7470c907c58dab8628893
+run_name: str
+run_uuid: 458b50daf2b7470c907c58dab8628893
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1678810551515
+status: 3
+tags: []
+user_id: nalaminos

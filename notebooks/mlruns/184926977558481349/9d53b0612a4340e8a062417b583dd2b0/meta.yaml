@@ -1,0 +1,15 @@
+artifact_uri: file:///home/nalaminos/Proyectos/mlops-titanic/notebooks/mlruns/184926977558481349/9d53b0612a4340e8a062417b583dd2b0/artifacts
+end_time: 1678809158570
+entry_point_name: ''
+experiment_id: '184926977558481349'
+lifecycle_stage: active
+run_id: 9d53b0612a4340e8a062417b583dd2b0
+run_name: Naive Bayes
+run_uuid: 9d53b0612a4340e8a062417b583dd2b0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1678809158551
+status: 3
+tags: []
+user_id: nalaminos

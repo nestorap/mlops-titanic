@@ -1,0 +1,15 @@
+artifact_uri: file:///home/nalaminos/Proyectos/mlops-titanic/notebooks/mlruns/184926977558481349/acdb42910f3f43578ee2c614b2eaeb8b/artifacts
+end_time: 1678811044933
+entry_point_name: ''
+experiment_id: '184926977558481349'
+lifecycle_stage: active
+run_id: acdb42910f3f43578ee2c614b2eaeb8b
+run_name: Logistic Regression
+run_uuid: acdb42910f3f43578ee2c614b2eaeb8b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1678811044906
+status: 3
+tags: []
+user_id: nalaminos

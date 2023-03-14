@@ -1,0 +1,15 @@
+artifact_uri: file:///home/nalaminos/Proyectos/mlops-titanic/notebooks/mlruns/184926977558481349/8a9678df55cd42738431efa6a1375504/artifacts
+end_time: 1678810610852
+entry_point_name: ''
+experiment_id: '184926977558481349'
+lifecycle_stage: active
+run_id: 8a9678df55cd42738431efa6a1375504
+run_name: Decision Tree Classifier
+run_uuid: 8a9678df55cd42738431efa6a1375504
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1678810610515
+status: 3
+tags: []
+user_id: nalaminos

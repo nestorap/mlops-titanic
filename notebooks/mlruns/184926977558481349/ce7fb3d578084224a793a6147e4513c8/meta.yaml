@@ -1,0 +1,15 @@
+artifact_uri: file:///home/nalaminos/Proyectos/mlops-titanic/notebooks/mlruns/184926977558481349/ce7fb3d578084224a793a6147e4513c8/artifacts
+end_time: 1678810551693
+entry_point_name: ''
+experiment_id: '184926977558481349'
+lifecycle_stage: active
+run_id: ce7fb3d578084224a793a6147e4513c8
+run_name: Gradient Boosting Classifier
+run_uuid: ce7fb3d578084224a793a6147e4513c8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1678810551672
+status: 3
+tags: []
+user_id: nalaminos
