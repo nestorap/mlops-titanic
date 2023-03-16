@@ -1,34 +1,27 @@
-"""
-Create an iris flow
-"""
-from config import Location, ModelParams, ProcessConfig
-from prefect import flow
-from process import process
-from run_notebook import run_notebook
-from train_model import train
+'''
+En este script tenemos el proceso principal
+'''
+import pandas as pd
+import preprocessors as pp
+
+from pipeline import pipeline
+import hydra
+from hydra import utils
+import joblib
+import os
+from omegaconf import DictConfig, OmegaConf
+
+@hydra.main(version_base=None, config_path="config/", config_name="preprocessing")
+def run(config: DictConfig):
+    df = pd.read_csv(config.dataset.data)
+    match_pipeline = pipeline(config)
+    match_pipeline.fit(df)
+    joblib.dump(match_pipeline, utils.to_absolute_path(config.pipeline.pipeline01))
+
+    return df
+
+if __name__ == '__main__':
+    run()
 
 
-@flow
-def iris_flow(
-    location: Location = Location(),
-    process_config: ProcessConfig = ProcessConfig(),
-    model_params: ModelParams = ModelParams(),
-):
-    """Flow to run the process, train, and run_notebook flows
-
-    Parameters
-    ----------
-    location : Location, optional
-        Locations of inputs and outputs, by default Location()
-    process_config : ProcessConfig, optional
-        Configurations for processing data, by default ProcessConfig()
-    model_params : ModelParams, optional
-        Configurations for training models, by default ModelParams()
-    """
-    process(location, process_config)
-    train(location, model_params)
-    run_notebook(location)
-
-
-if __name__ == "__main__":
-    iris_flow()
+    

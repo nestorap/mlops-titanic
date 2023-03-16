@@ -1,0 +1,8 @@
+dataset:
+  data: data/raw/titanic.csv
+pipeline:
+  pipeline01: logisticregression
+variables:
+  variables_numeric:
+  - age
+  - fare
