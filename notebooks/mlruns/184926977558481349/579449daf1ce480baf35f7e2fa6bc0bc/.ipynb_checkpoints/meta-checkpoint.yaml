@@ -1,0 +1,15 @@
+artifact_uri: file:///home/nalaminos/Proyectos/mlops-titanic/notebooks/mlruns/184926977558481349/579449daf1ce480baf35f7e2fa6bc0bc/artifacts
+end_time: 1678809158282
+entry_point_name: ''
+experiment_id: '184926977558481349'
+lifecycle_stage: active
+run_id: 579449daf1ce480baf35f7e2fa6bc0bc
+run_name: Extra Trees Classifier
+run_uuid: 579449daf1ce480baf35f7e2fa6bc0bc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1678809158259
+status: 3
+tags: []
+user_id: nalaminos
