@@ -6,6 +6,9 @@ import pandas as pd
 import numpy as np
 
 from sklearn.pipeline import Pipeline
+from sklearn.impute import SimpleImputer
+from sklearn.preprocessing import StandardScaler
+from sklearn.linear_model import LogisticRegression
 import preprocessors as pp
 import hydra
 
@@ -27,6 +30,9 @@ def pipeline(config):
             (
                 'categorical_dummies',
                 pp.GetDummie(variables=config.variables.variables_cat)
+            ),
+            (
+                "classifier", LogisticRegression()
             )
         ]
     )

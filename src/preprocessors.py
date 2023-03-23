@@ -27,9 +27,11 @@ class NumericalImputer(BaseEstimator, TransformerMixin):
     def transform(self, X):
         X_ = X.copy()
         imputer = SimpleImputer(missing_values=np.nan, strategy="mean")
-        matrix = imputer.fit_transform(X_.loc[:, variables])
+        columnas = [variable for variable in self.variables]
+        matrix = imputer.fit_transform(X_.loc[:, columnas])
         # Agregamos las columnas sin nan al df
-        X_[variables] = matrix
+        X_[columnas] = matrix
+        
         return X_
 
 class StandarNumeric(BaseEstimator, TransformerMixin):
@@ -41,12 +43,13 @@ class StandarNumeric(BaseEstimator, TransformerMixin):
     def fit(self, X, y=None):
         return self
 
-    def scalado(self, X):
+    def transform(self, X):
         scaler = StandardScaler()
+        columnas = [variable for variable in self.variables]
         X_ = X.copy()
-        matrix_scaled = scaler.fit_transform(X_.loc[:,variables])
+        matrix_scaled = scaler.fit_transform(X_.loc[:, columnas])
         # Añadimos las columnas escaladas al dataframe
-        X_[variables] = matrix_scaled
+        X_[columnas] = matrix_scaled
         return X_
 
 
@@ -58,14 +61,15 @@ class CatImputer(BaseEstimator, TransformerMixin):
         self.variables = variables
 
     def fit(self, X, y=None):
-        return fit
+        return self
 
-    def cat_imputer(self, X):
+    def transform(self, X):
         X_ = X.copy()
         imputer = SimpleImputer(missing_values=np.nan, strategy="most_frequent")
-        matrix = imputer.fit_transform(X_.loc[:,variables])
+        columnas = [variable for variable in self.variables]
+        matrix = imputer.fit_transform(X_.loc[:, columnas])
         # Agregamos la matriz con las variables categóricas sin nan
-        X_[variables] = matrix
+        X_[columnas] = matrix
 
         return X_
 
@@ -74,14 +78,15 @@ class GetDummie(BaseEstimator, TransformerMixin):
         self.variables = variables
 
     def fit(self, X, y=None):
-        return fit
+        return self
 
-    def dummies(self, X):
+    def transform(self, X):
         X_ = X.copy()
-        cat = X_.loc[:,variables]
+        columnas = [variable for variable in self.variables]
+        cat = X_.loc[:, columnas]
         cat_dummi = pd.get_dummies(cat)
         # Eliminamos las variables categóricas sin hacer dummies
-        X_ = X_drop(variables, axis=1)
+        X_ = X_.drop(columnas, axis=1)
 
         # Concatenamos las variables métricas con las categóricas
         X_clean = pd.concat([X_, cat_dummi], axis=1)

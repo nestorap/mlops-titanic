@@ -1,0 +1,27 @@
+dataset:
+  data: ../data/raw/titanic.csv
+pipeline:
+  pipeline01: logisticregression
+variables:
+  variables_numeric:
+  - age
+  - fare
+  variables_cat:
+  - pclass
+  - sex
+  - sibsp
+  - parch
+  - embarked
+  - class
+  - who
+  - embarked_town
+  variables:
+  - age
+  - fare
+  - pclass
+  - sex
+  - sibsp
+  - parch
+  - embarked
+  - class
+  - who
