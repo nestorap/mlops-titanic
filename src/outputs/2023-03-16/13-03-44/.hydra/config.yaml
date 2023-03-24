@@ -1,6 +1,0 @@
-pipeline:
-  pipeline01: logisticregression
-variables:
-  variables_numeric:
-  - age
-  - fare

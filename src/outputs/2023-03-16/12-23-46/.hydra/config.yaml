@@ -1,4 +1,0 @@
-variables:
-  variables_numeric:
-  - age
-  - fare
