@@ -30,8 +30,8 @@ from evaluate_model import evaluate
 #   return df
 @hydra.main(version_base=None, config_path="../config", config_name="config")
 def main(config):
-    #clean(config)
-    #train(config)
+    clean(config)
+    train(config)
     evaluate(config)
 
 
