@@ -1,0 +1,15 @@
+artifact_uri: file:///home/nalaminos/Proyectos/mlops-titanic/mlruns/504507324277857534/76be8cd684d142d4ac24192bc10e9027/artifacts
+end_time: 1684858006713
+entry_point_name: ''
+experiment_id: '504507324277857534'
+lifecycle_stage: active
+run_id: 76be8cd684d142d4ac24192bc10e9027
+run_name: upbeat-skink-364
+run_uuid: 76be8cd684d142d4ac24192bc10e9027
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1684858006668
+status: 4
+tags: []
+user_id: nalaminos

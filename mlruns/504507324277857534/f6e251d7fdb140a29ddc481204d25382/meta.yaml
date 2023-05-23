@@ -1,0 +1,15 @@
+artifact_uri: file:///home/nalaminos/Proyectos/mlops-titanic/mlruns/504507324277857534/f6e251d7fdb140a29ddc481204d25382/artifacts
+end_time: 1684856987900
+entry_point_name: ''
+experiment_id: '504507324277857534'
+lifecycle_stage: active
+run_id: f6e251d7fdb140a29ddc481204d25382
+run_name: caring-cow-660
+run_uuid: f6e251d7fdb140a29ddc481204d25382
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1684856987854
+status: 4
+tags: []
+user_id: nalaminos

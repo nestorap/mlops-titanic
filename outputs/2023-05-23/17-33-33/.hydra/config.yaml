@@ -1,11 +1,7 @@
-defaults:
-  - process: process
-
 dataset:
   data: ../data/raw/titanic.csv
-
 processed:
-  dir : ../data/final
+  dir: ../data/final
   X_train:
     name: X_train/X_train.csv
     path: ${processed.dir}/${processed.X_train.name}
@@ -18,21 +14,32 @@ processed:
   y_test:
     name: y_test/y_test.csv
     path: ${processed.dir}/${processed.y_test.name}
-
 pipeline:
   pipeline01: logisticregression
-
 variables:
-  target: ["survived"]
-  variables_numeric: ["age", "fare"]
-  variables_cat: ["pclass", "sex", "embarked", "class", "who"]
-  variables: ["age", "fare", "pclass", "sex", "embarked", "class", "who"]
-
+  target:
+  - survived
+  variables_numeric:
+  - age
+  - fare
+  variables_cat:
+  - pclass
+  - sex
+  - embarked
+  - class
+  - who
+  variables:
+  - age
+  - fare
+  - pclass
+  - sex
+  - embarked
+  - class
+  - who
 model:
   dir: ../models/
   name: logisticregression.pkl
   path: ${model.dir}/${model.name}
-
-mlflow_tracking_ui : file:/home/nalaminos/Proyectos/mlops-titanic/mlruns/
-mlflow_USERNAME : mlopstitanic
-mlflow_PASSWORD : XX
+mlflow_tracking_ui: file:/home/nalaminos/Proyectos/mlops-titanic/mlruns/
+mlflow_USERNAME: mlopstitanic
+mlflow_PASSWORD: XX

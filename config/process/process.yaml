@@ -1,0 +1,9 @@
+target: survived
+features:
+  - age
+  - fare
+  - pclass
+  - sex
+  - embarked
+  - class
+  - who

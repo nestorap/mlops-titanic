@@ -1,0 +1,15 @@
+artifact_uri: file:///home/nalaminos/Proyectos/mlops-titanic/mlruns/504507324277857534/45f2ef57bdad417d877c5f496b9730a1/artifacts
+end_time: 1684857758289
+entry_point_name: ''
+experiment_id: '504507324277857534'
+lifecycle_stage: active
+run_id: 45f2ef57bdad417d877c5f496b9730a1
+run_name: stylish-snipe-779
+run_uuid: 45f2ef57bdad417d877c5f496b9730a1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1684857758242
+status: 4
+tags: []
+user_id: nalaminos
